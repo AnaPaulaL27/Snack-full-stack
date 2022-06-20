@@ -6,6 +6,7 @@ import AddRecipe from "./components/AddRecipe/NewRecipeForm";
 import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
+import RecipeContainer from "./components/AddRecipe/RecipeContainer";
 
 function App() {
   
@@ -22,7 +23,7 @@ function App() {
           <RecipeListContainer />
         </Route>
         <Route path="/add-recipe">
-          <NewRecipeForm />
+          <RecipeContainer/>
         </Route>
         <Route path="/contact">
           <Contact />

@@ -1,4 +1,5 @@
 import NewRecipeForm from "./NewRecipeForm";
+import RecipeList from "../FindRecipe/RecipeList";
 import { useState, useEffect } from "react";
 
 const RecipeContainer = () => {
@@ -19,7 +20,7 @@ const RecipeContainer = () => {
     fetch("http://localhost:8080/ingredients")
     .then(response => response.json())
     .then(data => {
-      setIngredients(data)
+     setIngredients(data)
      })
   
   }, [])
@@ -45,7 +46,7 @@ const RecipeContainer = () => {
     <>
       <h1>Delicious Recipes </h1>
       <p> a resource for food-lovers! </p>
-      <NewRecipeForm postRecipe={postRecipe} ingredients = {ingredients}/>
+      {ingredients ? <NewRecipeForm postRecipe={postRecipe} ingredients = {ingredients}/>: ""}
       <RecipeList recipes={recipes} />
       
     </>
