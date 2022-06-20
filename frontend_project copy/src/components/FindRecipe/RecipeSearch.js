@@ -57,7 +57,7 @@ const RecipeSearch = ({ recipes }) => {
         <input type="text" placeholder="Momo" onChange={inputHandler} />
       </div>
 
-      <FormControl>
+      <FormControl className="filter">
           <FormLabel id="demo-row-radio-buttons-group-label">Cuisine</FormLabel>
           <RadioGroup
             row

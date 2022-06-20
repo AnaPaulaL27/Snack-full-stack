@@ -22,12 +22,12 @@ const RecipeListContainer = () => {
   
 
   return (
-    <div>
+    <>
         
         <RecipeSearch recipes={recipes} setRecipes={setRecipes} />
         {/* <RecipeList recipes={recipes} /> */}
      
-    </div>
+    </>
   );
 };
 
