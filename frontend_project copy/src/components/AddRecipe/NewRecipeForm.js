@@ -1,9 +1,13 @@
 import {useState} from "react";
 
-const NewRecipeForm = ({postRecipe}) => {
-// const cuisineOptions = recipes.map((recipe) => {
-//     return <option key={recipe.id} value={recipe.id}>{recipe.cuisine}</option>
-// })
+const NewRecipeForm = ({postRecipe, ingredients}) => {
+
+
+    // const ingredientOptions = ingredients.map(ingredient => {
+    //     return <option key={ingredient.id} value={ingredient.id}>{ingredient.name}</option>
+        
+    //   })
+
 const[stateRecipe, setStateRecipe]= useState(
     {
         name: "",
@@ -11,8 +15,8 @@ const[stateRecipe, setStateRecipe]= useState(
         cookTime: 0,
         portionSize: 0,
         cuisine: "",
-        measurements: "",
-        equipments: "",
+        measurements: null,
+        equipments: null,
     }
 )
 const handleChange = (event) => {
@@ -38,6 +42,19 @@ const handleFormSubmit= (event) => {
     postRecipe(submittable);
     alert("Great choice! Recipe has been added");
 }
+
+
+
+
+ 
+const handleIngredient = (event) => {
+      const ingredientId = parseInt(event.target.value);
+      const selectedIngredient = ingredients.find(ingredient => ingredient.id === ingredientId)
+      let copiedRecipe = {...stateRecipe}
+      copiedRecipe.ingredient = selectedIngredient
+      setStateRecipe(copiedRecipe);
+  }
+  
 return(
         <form onSubmit={handleFormSubmit}>
            <h3>Add a new recipe</h3>
@@ -77,15 +94,25 @@ return(
                 value={stateRecipe.portionSize}
                 />
             </div>
+
             <div>
-                <label>Cuisine: </label>
-                <input
-                type="text"
-                name="cuisine"
-                onChange={handleChange}
-                value={stateRecipe.cuisine}
-                />
+                <label> Select Cusine: </label>
+            <select >
+            
+            <option value="Italian">Italian</option>
+            <option value="Indian">Indian</option>
+            <option value="Chinese">Chinese</option>
+          </select>
             </div>
+
+
+{/* <select name="ingredient" onChange={handleIngredient}>
+        <option>Select an ingredient</option>
+        {ingredientOptions}
+      </select> */}
+         
+           
+            
             <div>
                 <label>Equipments: </label>
                 <input
