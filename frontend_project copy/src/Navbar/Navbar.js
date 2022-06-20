@@ -1,10 +1,11 @@
 import { NavLink } from "react-router-dom";
 import classes from './Navbar.module.css'
+import FastfoodIcon from '@mui/icons-material/Fastfood';
 
 const Navbar = () => {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>Recipe Gen</div>
+            <div className={classes.logo}>Recipe Gen <FastfoodIcon fontSize="large" /></div>
             <nav className={classes.nav}>
                 <ul>
                     <li>
