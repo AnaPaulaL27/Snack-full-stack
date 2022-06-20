@@ -31,6 +31,9 @@ public class Recipe {
     @Column
     private Cuisine cuisine;
 
+    @Column
+    private String image;
+
     @OneToMany(mappedBy = "recipe", orphanRemoval = true)
     @JsonIgnoreProperties({"recipe"})
     private List <Measurement> measurements;
@@ -49,12 +52,13 @@ public class Recipe {
 
     protected Recipe (){}
 
-    public Recipe(String name, int prepTime, int cookTime, int portionSize, Cuisine cuisine, List<Equipment> equipments) {
+    public Recipe(String name, int prepTime, int cookTime, int portionSize, Cuisine cuisine,String image, List<Equipment> equipments) {
         this.name = name;
         this.prepTime = prepTime;
         this.cookTime = cookTime;
         this.portionSize = portionSize;
         this.cuisine = cuisine;
+        this.image = image;
         this.measurements = new ArrayList<>();
         this.equipments = equipments;
     }
@@ -127,6 +131,14 @@ public class Recipe {
         this.users = users;
     }
 
+    public String getImage() {
+        return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
     @PreRemove
     private void removeRecipesFromEquipments() {
         for (Equipment equipment : equipments) {
@@ -147,6 +159,7 @@ public class Recipe {
                 ", cookTime=" + cookTime +
                 ", portionSize=" + portionSize +
                 ", cuisine=" + cuisine +
+                ", image=" + image +
 //                ", measurements=" + measurements +
 //                ", equipments=" + equipments +
                 '}';

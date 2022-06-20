@@ -25,6 +25,7 @@ const RecipeSearch = ({ recipes }) => {
       return (
         <div key={recipe.id}>
           <h2>{recipe.name}</h2>
+          <img src={recipe.image}/>
           <Button variant="contained" color="primary">
             Details
           </Button>

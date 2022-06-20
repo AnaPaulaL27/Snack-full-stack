@@ -2,6 +2,9 @@ import RecipeList from "./RecipeList";
 import { useState, useEffect } from "react";
 import RecipeSearch from "./RecipeSearch";
 import Grid from "@mui/material/Grid";
+import Drawer from "@mui/material/Drawer";
+
+const drawerWidth = 380;
 
 const RecipeListContainer = () => {
   const [recipes, setRecipes] = useState([]);
@@ -17,7 +20,7 @@ const RecipeListContainer = () => {
       <Grid>
         <RecipeSearch recipes={recipes} />
         <RecipeList recipes={recipes} />
-      </Grid>
+      </Grid> 
     </>
   );
 };

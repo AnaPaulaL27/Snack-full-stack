@@ -2,9 +2,10 @@ import "./App.css";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Layout from "./Navbar/Layout";
-import AddRecipe from "./components/AddRecipe";
+import AddRecipe from "./components/AddRecipe/NewRecipeForm";
 import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
+import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 
 function App() {
   
@@ -21,7 +22,7 @@ function App() {
           <RecipeListContainer />
         </Route>
         <Route path="/add-recipe">
-          <AddRecipe />
+          <NewRecipeForm />
         </Route>
         <Route path="/contact">
           <Contact />
