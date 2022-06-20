@@ -8,6 +8,7 @@ const drawerWidth = 380;
 
 const RecipeListContainer = () => {
   const [recipes, setRecipes] = useState([]);
+  
 
   useEffect(() => {
     fetch("http://localhost:8080/recipes")
@@ -15,13 +16,18 @@ const RecipeListContainer = () => {
       .then((data) => setRecipes(data));
   }, []);
 
+  
+
+
+  
+
   return (
-    <>
-      <Grid>
-        <RecipeSearch recipes={recipes} />
-        <RecipeList recipes={recipes} />
-      </Grid> 
-    </>
+    <div>
+        
+        <RecipeSearch recipes={recipes} setRecipes={setRecipes} />
+        {/* <RecipeList recipes={recipes} /> */}
+     
+    </div>
   );
 };
 

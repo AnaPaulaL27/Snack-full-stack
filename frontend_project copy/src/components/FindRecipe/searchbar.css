@@ -1,21 +1,57 @@
 .searchBar-wrap {
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.26);
-    padding: 1.5rem 1rem;
-  }
-  .searchBar-icon {
-    color: rgba(0, 0, 0, 0.26);
-    margin-right: 2rem;
-  }
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  width: 30%;
+  margin-left: 40px;
+
+}
+.searchBar-icon {
+  color: black;
+  margin-right: 1rem;
+}
+
+.searchBar-wrap input {
+  font-size: 1.5rem;
+  outline: none;
+  border: none;
+  width: 100%;
+}
+
+.searchBar-wrap input::placeholder {
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.parentCard {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card{
+  height: 420px;
+  width: 420px;
+  text-align: center;
+  margin: 0px;
   
-  .searchBar-wrap input {
-    font-size: 1.5rem;
-    outline: none;
-    border: none;
-    width: 100%;
-  }
+  /* background-color: #e0dfdc;; */
   
-  .searchBar-wrap input::placeholder {
-    color: rgba(0, 0, 0, 0.26);
-  }
+}
+
+
+.title {
+  text-align: center;
+}
+
+.image {
+  width: 80%;
+  margin: auto;
+  display: block;
+  border-radius: 8%;
+}
+
+
+
+.container {
+  display:flex;
+}
