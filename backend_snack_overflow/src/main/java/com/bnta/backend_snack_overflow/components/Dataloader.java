@@ -75,7 +75,7 @@ public class Dataloader implements ApplicationRunner {
         Recipe recipe3 = new Recipe("Spaghetti Bolognese",30, 60, 4, Cuisine.ITALIAN,"https://source.unsplash.com/sA3wymYqyaI", Arrays.asList(equ1, equ7, equ8, equ10, equ12));
         Recipe recipe4 = new Recipe("Tacos",30, 20, 4, Cuisine.MEXICAN, "https://source.unsplash.com/wIqpmuOloVA", Arrays.asList(equ3, equ4, equ5, equ9, equ11, equ13));
         Recipe recipe5 = new Recipe("Tikka Masala",10, 30, 1, Cuisine.INDIAN, "https://source.unsplash.com/ZSukCSw5VV4",Arrays.asList(equ3, equ4, equ7));
-        Recipe recipe6 = new Recipe("Chow Mein",20, 10, 2, Cuisine.CHINESE,"https://source.unsplash.com/grDcbeK2MRY/3", Arrays.asList(equ5, equ3, equ7));
+        Recipe recipe6 = new Recipe("Chow Mein",20, 10, 2, Cuisine.CHINESE,"https://mymorningmocha.com/wp-content/uploads/2021/06/how-to-make-chicken-chow-mein-like-the-takeaway-500x500.jpg", Arrays.asList(equ5, equ3, equ7));
         Recipe recipe7 = new Recipe("Nigerian Jollof Rice",20, 30, 4, Cuisine.NIGERIAN, "https://assets.epicurious.com/photos/5e2f664178858f0008767651/5:4/w_4164,h_3331,c_limit/JollofRice_RECIPE_012320_146.jpg/300x300",Arrays.asList(equ8, equ1, equ7, equ9));
         recipeRepository.saveAll(Arrays.asList(recipe1,recipe2,recipe3,recipe4,recipe5,recipe6,recipe7));
 
