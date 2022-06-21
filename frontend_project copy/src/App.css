@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+@import "react-slideshow-image/dist/styles.css";
+
+
 .App {
   width: 100vw;
   height: 100vh;
@@ -20,4 +23,62 @@
 body {
   padding: 0;
   margin: 0;
+}
+
+
+/*Slide Shows*/
+
+
+
+
+Result Skip Results Iframe
+EDIT ON
+/* Slideshow */
+
+.slideshow {
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  text-align: center;
+  border: 1px solid black
+
+}
+
+.slideshowSlider {
+  white-space: nowrap;
+  transition: ease 1000ms;
+}
+
+.slide {
+  display: inline-flex;
+  justify-content: center;
+  text-align: center;
+  margin:auto;
+
+  width: 100%;
+  border-radius: 40px;
+}
+
+/* Buttons */
+
+.slideshowDots {
+  text-align: center;
+}
+
+.slideshowDot {
+  display: inline-block;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+
+  cursor: pointer;
+  margin: 15px 7px 0px;
+
+  background-color: #c4c4c4;
+}
+
+.slideShow_img{
+  display: inline-flex;
+  text-align: center;
+  width: 80%;
 }

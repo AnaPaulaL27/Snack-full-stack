@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
+import SlideShow1 from './components/SlideShow1';
+
 
 function App() {
   
@@ -18,6 +20,7 @@ function App() {
         </Route>
         <Route path="/homepage" exact>
           <Homepage />
+
         </Route>
         <Route path="/find-recipes">
           <RecipeListContainer />
