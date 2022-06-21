@@ -9,6 +9,7 @@ import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
 import Recipe from "./components/FindRecipe/Recipe";
 import FooterBar from "./components/Footer/FooterBar";
+import RatingsReviews from "./components/RatingsReviews";
 
 function App() {
   
@@ -36,6 +37,7 @@ function App() {
         </Route>
       </Switch>
     </Layout>
+   <RatingsReviews />
   <FooterBar />
 </>
   );

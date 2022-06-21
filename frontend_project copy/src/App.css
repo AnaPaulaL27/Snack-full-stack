@@ -189,3 +189,71 @@ footer li{
   bottom:12.6em;
   opacity: 0.3;
   }
+
+  /* RATINGS REVIEWS */
+
+
+*{
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;   
+}
+
+.our-services-center, .our-services-right, .our-services-left{
+display: flex;
+width: 35%;
+min-height: 15em;
+border-radius: 1.2rem;
+justify-content: start;
+align-items: center;
+flex-direction: column;
+ background-color: rgb(251, 246, 246);
+ border-spacing: 40em;
+}
+
+.our-services-container{
+display:flex;
+flex-direction: colum;
+align-items: center;
+
+/* position: absolute; */
+} 
+
+
+.our-services-center, .our-services-right, .our-services-left{
+/* position: absolute; */
+min-width: 350px;
+}
+
+.title{
+align-self: flex-start;
+}
+#subheader{
+align-self: flex-start;
+left:3em;
+bottom:1.4em ;
+size: 100;
+font-weight: 900;
+}
+
+
+#subheader5{
+position: relative;
+left:3em;
+bottom:1.4em ;
+font-weight: 700;
+}
+
+#subheaderMillion{
+position: relative;
+left:19em;
+bottom:2.4em ;
+color:darkgray;
+}
+.stars{
+align-self: flex-start;
+}
+
+
+
