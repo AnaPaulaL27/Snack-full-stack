@@ -7,11 +7,13 @@ import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
-import Recipe from "./components/FindRecipe/Recipe"
+import Recipe from "./components/FindRecipe/Recipe";
+import FooterBar from "./components/Footer/FooterBar";
 
 function App() {
   
   return (
+    <>
     <Layout>
       <Switch>
         <Route path="/" exact>
@@ -34,6 +36,8 @@ function App() {
         </Route>
       </Switch>
     </Layout>
+  <FooterBar />
+</>
   );
 }
 
