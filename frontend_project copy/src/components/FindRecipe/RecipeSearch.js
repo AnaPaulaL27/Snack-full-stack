@@ -52,6 +52,7 @@ const RecipeSearch = ({ recipes }) => {
 
   return (
     <>
+    <div className=" search-container">
       <div className="searchBar-wrap">
         <SearchIcon className="searchBar-icon" />
         <input type="text" placeholder="Momo" onChange={inputHandler} />
@@ -72,6 +73,7 @@ const RecipeSearch = ({ recipes }) => {
             <FormControlLabel value="nigerian" control={<Radio />} label="Nigerian" />
           </RadioGroup>
         </FormControl>
+      </div>
       <div className="parentCard">
         {checker}
       </div>
