@@ -8,11 +8,11 @@ import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
 import SlideShow1 from './components/SlideShow1';
-
-
+import FooterBar from "./components/FooterBar"
 function App() {
   
   return (
+    <>
     <Layout>
       <Switch>
         <Route path="/" exact>
@@ -33,6 +33,8 @@ function App() {
         </Route>
       </Switch>
     </Layout>
+ <FooterBar />
+ </>
   );
 }
 
