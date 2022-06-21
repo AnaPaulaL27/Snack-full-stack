@@ -7,12 +7,11 @@ import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
-import SlideShow1 from './components/SlideShow1';
-import FooterBar from "./components/FooterBar"
+import Recipe from "./components/FindRecipe/Recipe"
+
 function App() {
   
   return (
-    <>
     <Layout>
       <Switch>
         <Route path="/" exact>
@@ -20,10 +19,12 @@ function App() {
         </Route>
         <Route path="/homepage" exact>
           <Homepage />
-
         </Route>
         <Route path="/find-recipes">
           <RecipeListContainer />
+        </Route>
+        <Route path="/find-recipe/:recipeId">
+          <Recipe />
         </Route>
         <Route path="/add-recipe">
           <RecipeContainer/>
@@ -33,8 +34,6 @@ function App() {
         </Route>
       </Switch>
     </Layout>
- <FooterBar />
- </>
   );
 }
 

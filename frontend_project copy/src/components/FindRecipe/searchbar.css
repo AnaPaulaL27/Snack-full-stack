@@ -59,6 +59,9 @@
 }
 
 
-.search-container{
+.searchContainer {
   display: flex;
+  justify-content: space-between;
 }
+
+

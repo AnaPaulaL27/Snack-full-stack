@@ -12,6 +12,8 @@ import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
 import FormLabel from "@mui/material/FormLabel";
+import { Link } from "react-router-dom";
+
 
 const RecipeSearch = ({ recipes }) => {
   const [query, setQuery] = useState("");
@@ -34,8 +36,9 @@ const RecipeSearch = ({ recipes }) => {
       return (
         <div className="card" key={recipe.id}>
           <h2 className="title">{recipe.name}</h2>
-          <img className="image" src={recipe.image} alt="waiting" />
-          <Button
+          <a href='/find-recipe/{params.productId}'>
+          <img className="image" src={recipe.image} alt="waiting" /></a>
+          {/* <Button
             style={{
               borderRadius: 10,
               backgroundColor: "#e0dfdc",
@@ -45,14 +48,14 @@ const RecipeSearch = ({ recipes }) => {
             }}
           >
             Details
-          </Button>
+          </Button> */}
         </div>
       );
     });
 
   return (
     <>
-    <div className=" search-container">
+    <div className="searchContainer">
       <div className="searchBar-wrap">
         <SearchIcon className="searchBar-icon" />
         <input type="text" placeholder="Momo" onChange={inputHandler} />
@@ -73,7 +76,7 @@ const RecipeSearch = ({ recipes }) => {
             <FormControlLabel value="nigerian" control={<Radio />} label="Nigerian" />
           </RadioGroup>
         </FormControl>
-      </div>
+        </div>
       <div className="parentCard">
         {checker}
       </div>
