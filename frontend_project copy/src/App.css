@@ -262,7 +262,7 @@ align-self: flex-start;
 }
 
 .commentInputBox{
-  width: 50%;
+  width: 5%;
   height:50px;
 }
 
@@ -298,13 +298,13 @@ width:90%;
 }
 
 .signin-form{
-  padding: 2rem;
+  padding: 3rem;
   border-radius: 1.5rem;
   background-color: rgb(223, 223, 223);
   display: flex;
   flex-direction: column;
-  align-content: center;
-  align-items: center;
+  /* align-content: center; */
+  /* align-items: center; */
   margin-top: 10%;
   justify-content: center;
   width: 50%;
@@ -314,24 +314,27 @@ width:90%;
 
 
 #signinText{
+
   margin-top: 20%;
   display: flex;
-justify-content: center;
+  justify-content: center;
+ width: 100%;
   color: rgb(76, 76, 76);
 }
 
 .signin-item{
 
   display: flex;
-  width:75%
+  width:100%
 }
 .signin-label{
-  flex:1;
+  text-align: left;
 }
 
 .signinBox{
   margin-bottom: 1rem;
-  flex:1;
+  flex:2;
+  width:20%;
 }
 
 .button {
@@ -344,4 +347,10 @@ justify-content: center;
   display: inline-block;
   font-size: 14px;
   border-radius: 0.65rem;
+}
+
+.button:hover{
+  background-color: #3b873e; /* Green */
+  cursor: pointer;
+
 }

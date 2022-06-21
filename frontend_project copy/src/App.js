@@ -11,6 +11,8 @@ import Recipe from "./components/FindRecipe/Recipe";
 import FooterBar from "./components/Footer/FooterBar";
 import RatingsReviews from "./components/RatingsReviews";
 import SignInPage from "./components/SigninPage";
+import SignUpPage from "./components/SignUpPage";
+
 
 function App() {
   
@@ -39,6 +41,10 @@ function App() {
         </Route>
         <Route path ="/signIn">
           <SignInPage/>
+          
+        </Route>
+        <Route path ="/signUp">
+          <SignUpPage/>
           
         </Route>
       </Switch>
