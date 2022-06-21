@@ -20,6 +20,9 @@ const Navbar = () => {
                    <li>
                        <NavLink to='/contact' activeClassName={classes.active}>Contact</NavLink>
                    </li>
+                   <li>
+                       <NavLink to='/signIn' activeClassName={classes.active}>Sign in</NavLink>
+                   </li>
                 
                 </ul>
             </nav>

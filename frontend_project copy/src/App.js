@@ -10,6 +10,7 @@ import RecipeContainer from "./components/AddRecipe/RecipeContainer";
 import Recipe from "./components/FindRecipe/Recipe";
 import FooterBar from "./components/Footer/FooterBar";
 import RatingsReviews from "./components/RatingsReviews";
+import SignInPage from "./components/SigninPage";
 
 function App() {
   
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Redirect to="/homepage" />
+          <RatingsReviews />
         </Route>
         <Route path="/homepage" exact>
           <Homepage />
@@ -35,9 +37,13 @@ function App() {
         <Route path="/contact">
           <Contact />
         </Route>
+        <Route path ="/signIn">
+          <SignInPage/>
+          
+        </Route>
       </Switch>
     </Layout>
-   <RatingsReviews />
+  
   <FooterBar />
 </>
   );
