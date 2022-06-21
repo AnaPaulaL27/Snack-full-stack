@@ -1,10 +1,11 @@
 import classes from './Homepage.module.css'
+import SlideShow1 from './SlideShow1';
 
 const Homepage = () => {
     return (
         <>
         <div className={classes.border}>
-            <h1>HELLO</h1>
+            <SlideShow1/>
 
         </div>
         <div>
