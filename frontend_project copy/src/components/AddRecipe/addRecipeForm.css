@@ -1,0 +1,41 @@
+.form-container{
+    display: flex;
+    margin: 0;
+    
+}
+
+.addrecipe-form{
+    border: 1px solid rgb(166, 161, 161);
+    box-shadow: 2px 4px rgb(115, 109, 109);
+
+    border-radius:2rem;
+    flex:6;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+
+}
+
+.addrecipe-img-container{
+    align-content: center;
+    margin-right:2%;
+    
+    flex:5;
+
+}
+
+.signin-img{
+    width:100%;
+}
+
+.description{
+    margin-bottom: 2rem;
+    width: 80%;
+    height:100px
+}
+
+.header-text{
+    text-align: center;
+    margin-bottom: 8%;
+    padding-right:20%;
+}

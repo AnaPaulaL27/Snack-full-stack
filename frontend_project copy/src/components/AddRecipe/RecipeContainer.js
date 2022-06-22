@@ -25,6 +25,32 @@ const RecipeContainer = () => {
   
   }, [])
 
+  const [equipments, setEquipments] = useState([]);
+
+  useEffect(() =>{
+    fetch("http://localhost:8080/equipments")
+    .then(response => response.json())
+    .then(data => {
+     setEquipments(data)
+     })
+  
+  }, [])
+
+
+  const [measurements, setMeasurements] = useState([]);
+
+  useEffect(() =>{
+    fetch("http://localhost:8080/measurements")
+    .then(response => response.json())
+    .then(data => {
+     setMeasurements(data)
+     })
+  
+  }, [])
+
+
+
+
 
   const postRecipe = (newRecipe) => {
     console.log(newRecipe);
@@ -46,7 +72,11 @@ const RecipeContainer = () => {
     <>
       <h1>Delicious Recipes </h1>
       <p> a resource for food-lovers! </p>
-      {ingredients ? <NewRecipeForm postRecipe={postRecipe} ingredients = {ingredients}/>: ""}
+      {ingredients ? <NewRecipeForm postRecipe={postRecipe} 
+                                    ingredients = {ingredients} 
+                                    equipments = {equipments} 
+                                    measurements= {measurements}/>: ("")}
+
       <RecipeList recipes={recipes} />
       
     </>

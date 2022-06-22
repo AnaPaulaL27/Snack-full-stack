@@ -56,6 +56,7 @@ public class RecipeController {
     }
 
     //CREATE
+    @CrossOrigin
     @PostMapping
     public ResponseEntity<Recipe> createRecipe(@RequestBody Recipe recipe) {
         recipeRepository.save(recipe);
@@ -83,6 +84,7 @@ public class RecipeController {
     }
 
     //DELETE
+    @CrossOrigin
     @DeleteMapping(path = "/{id}")
     public ResponseEntity<HttpStatus> deleteRecipe(@PathVariable Long id) {
 
