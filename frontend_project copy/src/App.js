@@ -2,25 +2,21 @@ import "./App.css";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Layout from "./Navbar/Layout";
+import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
-import Recipe from "./components/AddRecipe/RecipeForm";
-import FooterBar from "./components/Footer/FooterBar";
-// import RatingsReviews from "./components/RatingsReviews/RatingsReviews";
-import SignInPage from "./components/SigninPage";
-import SignUpPage from "./components/SignUpPage";
-import AboutUs from "./components/About/AboutUs";
-
+import Recipe from "./components/FindRecipe/Recipe"
+import RecipeRealList from "./components/FindRecipe/RecipeRenderedList";
+import Account from "./components/Account/Account"
+import CreateAccount from "./components/Account/CreateAccount";
 
 function App() {
   
   return (
-    <>
     <Layout>
       <Switch>
         <Route path="/" exact>
           <Redirect to="/homepage" />
-          {/* <RatingsReviews /> */}
         </Route>
         <Route path="/homepage" exact>
           <Homepage />
@@ -29,27 +25,19 @@ function App() {
           <RecipeListContainer />
         </Route>
         <Route path="/find-recipe/:recipeId">
-          <Recipe />
+          <RecipeRealList />
         </Route>
         <Route path="/add-recipe">
           <RecipeContainer/>
         </Route>
-        <Route path="/aboutUs">
-          <AboutUs />
+        <Route path="/account" exact>
+          <Account />
         </Route>
-        <Route path ="/signIn">
-          <SignInPage/>
-          
-        </Route>
-        <Route path ="/signUp">
-          <SignUpPage/>
-          
+        <Route path="/account/createAccount">
+          <CreateAccount />
         </Route>
       </Switch>
     </Layout>
-  
-  <FooterBar />
-</>
   );
 }
 

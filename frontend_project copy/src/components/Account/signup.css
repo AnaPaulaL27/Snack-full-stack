@@ -1,0 +1,24 @@
+.signup {
+    height: 600px;
+    width: 600px;
+    text-align: center;
+    
+}
+
+
+.paragraph {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+    grid-gap: 275px;
+    justify-content: space-around;
+    padding: initial;
+    margin-right: 150px;
+    
+ 
+}

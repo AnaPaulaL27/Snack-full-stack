@@ -1,11 +1,13 @@
 import { NavLink } from "react-router-dom";
 import classes from './Navbar.module.css'
 import FastfoodIcon from '@mui/icons-material/Fastfood';
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
     return (
         <header className={classes.header}>
-            <div className={classes.logo}>Recipe Gen <FastfoodIcon fontSize="large" /></div>
+            <Link to='/homepage' style ={{textDecoration: "none"}}><div className={classes.logo}>Guide Bite <FastfoodIcon fontSize="large" /></div></Link>
             <nav className={classes.nav}>
                 <ul>
                     <li>
@@ -18,13 +20,7 @@ const Navbar = () => {
                        <NavLink to='/add-recipe' activeClassName={classes.active}>Add Recipe</NavLink>
                    </li>
                    <li>
-                       <NavLink to='/aboutUs' activeClassName={classes.active}>About Us</NavLink>
-                   </li>
-                   <li>
-                       <NavLink to='/signIn' activeClassName={classes.active}>Sign in</NavLink>
-                   </li>
-                   <li>
-                       <NavLink to='/SignUp' activeClassName={classes.active}>Sign up</NavLink>
+                       <NavLink to='/account' activeClassName={classes.active}><AccountCircleIcon fontSize="large"/></NavLink>
                    </li>
                 
                 </ul>
