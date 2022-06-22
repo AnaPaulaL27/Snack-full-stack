@@ -4,7 +4,7 @@ import Homepage from "./components/Homepage";
 import Layout from "./Navbar/Layout";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
-import Recipe from "./components/FindRecipe/Recipe";
+import Recipe from "./components/AddRecipe/RecipeForm";
 import FooterBar from "./components/Footer/FooterBar";
 // import RatingsReviews from "./components/RatingsReviews/RatingsReviews";
 import SignInPage from "./components/SigninPage";

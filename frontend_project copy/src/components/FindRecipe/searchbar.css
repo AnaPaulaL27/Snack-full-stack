@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid black;
-  width: 30%;
+  width: 90%;
   margin-left: 60px;
 
 }
@@ -23,20 +23,46 @@
 }
 
 .parentCard {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
+  grid-gap: 100px;
+  justify-content: space-around;
+  padding: initial;
+  margin-top: 10px;
+  padding-top: 50px; 
+  margin-left: 50px;
+  margin-right: 50px;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 50px; */
+ 
 }
+/* flex-start (default): items are packed toward the start line
+flex-end: items are packed toward to end line
+center: items are centered along the line
+space-between: items are evenly distributed in the line; first item is on the start line, last item on the end line
+space-around: items are evenly distributed in the line with equal space around them
+space-evenly: */
 
 .card{
-  height: 420px;
-  width: 420px;
+  height: 400x;
+  width: 400px;
   text-align: center;
   margin: 0px;
-  
+  padding-bottom:30px;
   /* background-color: #e0dfdc;; */
+  /* flex: 0 0 24%; /*6 items per line leaving some for margin*/
+  /* border: 1px solid black;
+  box-sizing: border-box; */ 
   
 }
+/* .card:not(:nth-child(4n+1)) {
+  margin-left: calc( (100% - (24% * 4)) / 1.7 );          /*  added  */
+
 
 
 .title {
@@ -62,6 +88,33 @@
 .searchContainer {
   display: flex;
   justify-content: space-between;
+  
 }
 
 
+.goBack {
+  text-align: center;
+  display: flex;
+  
+  justify-content: space-between;
+  border: 1px solid black;
+  height: 50px;
+  width: 100px;
+  
+}
+
+.cardBorder {
+  border: none;
+}
+
+.title1 {
+  text-align: center;
+  /* padding-bottom: 50px; */
+  border: 1px solid black;
+  margin-top: 0;
+  
+}
+
+test1 {
+  border: 1px solid black;
+}

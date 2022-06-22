@@ -1,4 +1,4 @@
-import RecipeList from "./RecipeList";
+
 import { useState, useEffect } from "react";
 import RecipeSearch from "./RecipeSearch";
 import Grid from "@mui/material/Grid";
@@ -23,7 +23,8 @@ const RecipeListContainer = () => {
 
   return (
     <>
-        
+    <div className="test1"></div>
+        {/* <h1 className="title1">Recipe Lists</h1> */}
         <RecipeSearch recipes={recipes} setRecipes={setRecipes} />
         {/* <RecipeList recipes={recipes} /> */}
      

@@ -1,15 +1,15 @@
 import NewRecipeForm from "./NewRecipeForm";
-import RecipeList from "../FindRecipe/RecipeList";
+import RecipeList from "./RecipeList";
 import { useState, useEffect } from "react";
 
 const RecipeContainer = () => {
-  const [recipes, setRecipes] = useState([]);
+  const [recipesForm, setRecipesForm] = useState([]);
 
   useEffect(() => {
     fetch("http://localhost:8080/recipes")
       .then((response) => response.json())
       .then((data) => {
-        setRecipes(data)
+        setRecipesForm(data)
       });
 
   }, []);
@@ -62,7 +62,7 @@ const RecipeContainer = () => {
     })
       // update locally
       .then((response) => response.json())
-      .then((savedRecipe) => setRecipes([...recipes, savedRecipe]));
+      .then((savedRecipe) => setRecipesForm([...recipesForm, savedRecipe]));
   };
 
 
@@ -77,7 +77,7 @@ const RecipeContainer = () => {
                                     equipments = {equipments} 
                                     measurements= {measurements}/>: ("")}
 
-      <RecipeList recipes={recipes} />
+      <RecipeList recipesForm={recipesForm} />
       
     </>
   );
