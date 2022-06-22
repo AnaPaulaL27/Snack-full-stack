@@ -80,7 +80,9 @@ body {
   max-height: 270px;
   background-color:rgb(191, 174, 174);
   padding-left:10em;
-  
+  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 ul{
   list-style: none;
@@ -91,12 +93,16 @@ ul{
 .row{
   display: flex;
   flex-wrap: wrap;
+  width: 600px;
+  flex-direction: row;
+  text-align: center;
 }
 
 .footer-col{
-  width: 15%;
   padding: 0 15px;
-  margin-top: 16px;
+  display: flex;
+  text-align: justify;
+  text-justify: inter-word;
 
 }
 

@@ -9,6 +9,7 @@ import Recipe from "./components/FindRecipe/Recipe"
 import RecipeRealList from "./components/FindRecipe/RecipeRenderedList";
 import Account from "./components/Account/Account"
 import CreateAccount from "./components/Account/CreateAccount";
+import FooterBar from "./components/Footer/FooterBar";
 
 function App() {
   
@@ -23,18 +24,23 @@ function App() {
         </Route>
         <Route path="/find-recipes">
           <RecipeListContainer />
+          <FooterBar />
         </Route>
         <Route path="/find-recipe/:recipeId">
           <RecipeRealList />
+          <FooterBar />
         </Route>
         <Route path="/add-recipe">
           <RecipeContainer/>
+          <FooterBar />
         </Route>
         <Route path="/account" exact>
           <Account />
+          <FooterBar />
         </Route>
         <Route path="/account/createAccount">
           <CreateAccount />
+          <FooterBar />
         </Route>
       </Switch>
     </Layout>

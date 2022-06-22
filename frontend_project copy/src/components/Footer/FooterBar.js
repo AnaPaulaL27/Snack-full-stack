@@ -14,11 +14,12 @@ const FooterBar = () => {
 
         <footer className="footer">
             <div className="container">
-            <img id= "footer-img-left"src="https://source.unsplash.com/oiIJ5jGijdQ/330x270" alt="Vegetables"/>
+            
                 <div className="row">
                     <div className="footer-col">
-                        <h4><b>Guide bit</b><Icon icon="la:cookie-bite"></Icon></h4>
+                        
                         <ul>
+                        <h4><b>Guide bit</b><Icon icon="la:cookie-bite"></Icon></h4>
                             <li><a href=""></a>About us</li>
                             <li><a href=""></a>Our services</li>
                             <li><a href=""></a>Terms of Use</li>
@@ -29,8 +30,9 @@ const FooterBar = () => {
 
                     </ div>
                     <div className="footer-col">
-                        <h4>Locations</h4>
+                        
                         <ul>
+                        <h4>Locations</h4>
                             <li><a href=""></a>Bright Offices</li>
                             <li><a href=""></a>London</li>
                             <li><a href=""></a>Edinburgh</li>
@@ -40,8 +42,9 @@ const FooterBar = () => {
 
                     </ div>
                     <div className="footer-col">
+                    <ul>
                         <h4>Get Help</h4>
-                        <ul>
+                        
                             <li><a href="https://www.howtocook.recipes/faq/">FAQ</a></li>
                             <li><a href="">Health Queries</a></li>
                             <li><a href="https://www.immediate.co.uk/complaints-escalation/">Complaints</a></li>
@@ -51,8 +54,9 @@ const FooterBar = () => {
 
                     </ div>
                     <div className="footer-col">
+                    <ul>
                         <h4>Follow us</h4>
-                        <div id="socialLinks">
+                        
 
                         <li><a href="https://tasty.co/"><Icon icon="logos:blogger"width="20" height="20" /> Blog</a></li>
                         <li><a href="https://en-gb.facebook.com/MyIncredibleRecipes/"><Icon icon="logos:facebook"width="20" height="20" /> Facebook </a></li>
@@ -60,8 +64,8 @@ const FooterBar = () => {
                         <li><a href="https://www.linkedin.com/in/foodblogs/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk"><Icon icon="logos:linkedin-icon" width="20" height="20" />Linkedin</a></li>
                         <li><a href="https://www.instagram.com/love_food/?hl=en"><Icon icon="logos:instagram-icon" width="20" height="20" /> Instagram</a></li>
                         <li><a href="https://www.youtube.com/watch?v=-bo3kr303uk"><Icon icon="logos:youtube-icon" width="20" height="20" /> Youtube</a></li>
-                        </div>
-                        <img id= "footer-img-right"src="https://source.unsplash.com/oiIJ5jGijdQ/330x270"  alt="vegetables"/>
+                        
+                        </ul>
 
                     </ div>
                  </div>
