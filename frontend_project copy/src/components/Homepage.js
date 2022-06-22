@@ -2,6 +2,9 @@ import classes from './Homepage.module.css'
 import SlideShow1 from './SlideShow1';
 import ReviewSection from './ReviewSection';
 import { useState } from "react"
+import RatingsReviews from "./RatingsReviews/RatingsReviews";
+import RandomFacts from "./RandomFacts/RandomFacts";
+
 
 
 const Homepage = () => {
@@ -21,6 +24,12 @@ const Homepage = () => {
         <div className={classes.border}>
             <SlideShow1/>
 
+        </div>
+        <div>
+        <RandomFacts />
+        </div>
+        <div>
+        <RatingsReviews />
         </div>
         <div>
             <ReviewSection addComment = {addComment}/>

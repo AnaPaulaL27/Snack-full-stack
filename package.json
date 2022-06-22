@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "react-router-dom": "^5.3.3"
+  },
+  "devDependencies": {
+    "@iconify/react": "^3.2.2"
   }
 }

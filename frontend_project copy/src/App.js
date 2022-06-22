@@ -2,16 +2,14 @@ import "./App.css";
 import { Route, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Layout from "./Navbar/Layout";
-import AddRecipe from "./components/AddRecipe/NewRecipeForm";
-import Contact from "./components/Contact";
 import RecipeListContainer from "./components/FindRecipe/RecipeListContainer";
-import NewRecipeForm from "./components/AddRecipe/NewRecipeForm";
 import RecipeContainer from "./components/AddRecipe/RecipeContainer";
 import Recipe from "./components/FindRecipe/Recipe";
 import FooterBar from "./components/Footer/FooterBar";
-import RatingsReviews from "./components/RatingsReviews";
+// import RatingsReviews from "./components/RatingsReviews/RatingsReviews";
 import SignInPage from "./components/SigninPage";
 import SignUpPage from "./components/SignUpPage";
+import AboutUs from "./components/About/AboutUs";
 
 
 function App() {
@@ -22,7 +20,7 @@ function App() {
       <Switch>
         <Route path="/" exact>
           <Redirect to="/homepage" />
-          <RatingsReviews />
+          {/* <RatingsReviews /> */}
         </Route>
         <Route path="/homepage" exact>
           <Homepage />
@@ -36,8 +34,8 @@ function App() {
         <Route path="/add-recipe">
           <RecipeContainer/>
         </Route>
-        <Route path="/contact">
-          <Contact />
+        <Route path="/aboutUs">
+          <AboutUs />
         </Route>
         <Route path ="/signIn">
           <SignInPage/>

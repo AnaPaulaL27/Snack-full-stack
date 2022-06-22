@@ -18,7 +18,7 @@ const Navbar = () => {
                        <NavLink to='/add-recipe' activeClassName={classes.active}>Add Recipe</NavLink>
                    </li>
                    <li>
-                       <NavLink to='/contact' activeClassName={classes.active}>Contact</NavLink>
+                       <NavLink to='/aboutUs' activeClassName={classes.active}>About Us</NavLink>
                    </li>
                    <li>
                        <NavLink to='/signIn' activeClassName={classes.active}>Sign in</NavLink>

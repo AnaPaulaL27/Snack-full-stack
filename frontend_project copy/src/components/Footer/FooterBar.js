@@ -45,8 +45,8 @@ const FooterBar = () => {
                             <li><a href="https://www.howtocook.recipes/faq/">FAQ</a></li>
                             <li><a href="">Health Queries</a></li>
                             <li><a href="https://www.immediate.co.uk/complaints-escalation/">Complaints</a></li>
-                            <li><a href="http://www.gmail.com/">Email / Call</a></li>
-                            <li><a href="https://policies.google.com/privacy?hl=en-GB"></a>Other</li>
+                            <li><a href="http://www.gmail.com/">Email / Call us</a></li>
+                            <li><a href="https://policies.google.com/privacy?hl=en-GB"></a></li>
                         </ul>
 
                     </ div>
