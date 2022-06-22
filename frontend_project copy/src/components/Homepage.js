@@ -22,7 +22,9 @@ const Homepage = () => {
 
     return (
         <>
-        <div className={classes.border}>
+        <h2 className='slideshow-header'> 
+Recipes You'll Love</h2>
+        <div >
             <SlideShow1/>
 
         </div>

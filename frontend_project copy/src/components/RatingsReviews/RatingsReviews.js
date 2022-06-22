@@ -12,7 +12,7 @@ function ratingsReviews() {
 <h1 className='our-services-header'>Ratings and Reviews</h1>
 {/* <h4 id='see-all-button'>See All</h4> */}
 
-<h1 id="subheader">4.7</h1><br />
+<h2 id="subheader">4.7</h2><br />
 <p id="subheader5">out of 5</p>
 {/* <p id="subheaderMillion"> 1.6M Ratings</p> */}
 {/* <div>

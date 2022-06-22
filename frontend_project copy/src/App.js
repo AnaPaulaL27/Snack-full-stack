@@ -1,4 +1,7 @@
 import "./App.css";
+import "./components/AddRecipe/addRecipeForm.css";
+import "./components/RatingsReviews/ratingsReviews.css";
+
 import { Route, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Layout from "./Navbar/Layout";
@@ -10,7 +13,6 @@ import RecipeRealList from "./components/FindRecipe/RecipeRenderedList";
 import Account from "./components/Account/Account"
 import CreateAccount from "./components/Account/CreateAccount";
 import FooterBar from "./components/Footer/FooterBar";
-
 function App() {
   
   return (

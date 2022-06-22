@@ -105,121 +105,131 @@ const NewRecipeForm = ({ postRecipe, ingredients, equipments, measurements }) =>
 
 
     return (
+<>
+        <h2 className="addRecipeHeading">Share Delicious Recipes</h2>
+        <p className="addRecipe-p">a resource for food-lovers!</p>
         <div className="form-container">
-               <div className="addrecipe-img-container">
-                <img className= "signin-img"src={signInImage}/>
-            </div>
-        <form className ="addrecipe-form" onSubmit={handleFormSubmit}>
-            <h3 className="header-text">Add a new recipe</h3>
-            <label>Title </label>
-            <div>
-                <input
-                    type="text"
-                    name="name"
-                    onChange={handleChange}
-                    value={stateRecipe.name}
-                />
-            </div>
+        <div className="addrecipe-img-container">
+         <img className= "signin-img"src={signInImage}/>
+     </div>
+ <form className ="addrecipe-form" onSubmit={handleFormSubmit}>
+     <h3 className="header-text">Add a new recipe</h3>
+     <label>Title </label>
+     <div>
+         <input
+             type="text"
+             name="name"
+             onChange={handleChange}
+             value={stateRecipe.name}
+         />
+     </div>
 
-            <label>Prep Time </label>
-            <div>
-               
-                <input
-                    type="text"
-                    name="prepTime"
-                    onChange={handleChange}
-                    value={stateRecipe.prepTime}
-                />
-            </div>
+     <label>Prep Time </label>
+     <div>
+        
+         <input
+             type="text"
+             name="prepTime"
+             onChange={handleChange}
+             value={stateRecipe.prepTime}
+         />
+     </div>
 
-            <label>Cook Time </label>
-            <div>
-                <input
-                    type="text"
-                    name="cookTime"
-                    onChange={handleChange}
-                    value={stateRecipe.cookTime}
-                />
-            </div>
+     <label>Cook Time </label>
+     <div>
+         <input
+             type="text"
+             name="cookTime"
+             onChange={handleChange}
+             value={stateRecipe.cookTime}
+         />
+     </div>
 
-            <label>Portion Size </label>
-            <div> 
-                <input
-                    type="text"
-                    name="portionSize"
-                    onChange={handleChange}
-                    value={stateRecipe.portionSize}
-                />
-            </div>
-            <label> Select Cusine </label>
-            <div>
-                
-                <select onChange={handleCusine}>
+     <label>Portion Size </label>
+     <div> 
+         <input
+             type="text"
+             name="portionSize"
+             onChange={handleChange}
+             value={stateRecipe.portionSize}
+         />
+     </div>
+     <label> Select Cusine </label>
+     <div>
+         
+         <select onChange={handleCusine}>
 
-                    <option value="AMERICAN">AMERICAN</option>
-                    <option value="SPANISH">SPANISH</option>
-                    <option value="MEDITERRANEAN">MEDITERRANEAN</option>
-                </select>
-            </div>
+             <option value="AMERICAN">AMERICAN</option>
+             <option value="SPANISH">SPANISH</option>
+             <option value="MEDITERRANEAN">MEDITERRANEAN</option>
+             <option value="GREEK">GREEK</option>
+             <option value="NIGERIAN">NIGERIAN</option>
+             <option value="MEXICAN">MEXICAN</option>
+             <option value="CHINESE">CHINESE</option>
+             <option value="TURKISH">TURKISH</option>
+             <option value="IRANIAN">IRANIAN</option>
+         </select>
+     </div>
 
-            <div>
-                <label>Image source </label>
-                <input
-                    type="text"
-                    name="image"
-                    onChange={handleChange}
-                    value={stateRecipe.image}
-                />
-            </div>
+     <div>
+         <label>Image source </label>
+         <input
+             type="text"
+             name="image"
+             onChange={handleChange}
+             value={stateRecipe.image}
+         />
+     </div>
 
-            <div>
-            <label>Select an ingredient </label>
-                <select name="ingredient" >
-                    <option>Ingredients</option>
-                    {ingredientOptions}
-                </select>
+     <div>
+     <label>Select an ingredient </label>
+         <select name="ingredient" >
+             <option>Ingredients</option>
+             {ingredientOptions}
+         </select>
 
-                <label> amount: </label>
-                <select name="measurement" onChange={handleMeasurement}>
-                <option>Measurements</option>
-                {measurementOptions}
-            </select>
-            </div>
-
-
-            <div> 
-            <label>Select equipments: </label>
-                <select name="equipment" onChange={handleEquipment}>
-                <option> Equipments</option>
-                {equipmentsOptions}
-            </select>
-            </div>
-            <label>Description: </label>
-            <div>
-                
-                <input className="description"
-                    type="text"
-                    name="description"
-                    // onChange={handleChange}
-                    // value={stateRecipe.image}
-                />
-            </div>
-
-            <div>
-                </div>
+         <label> amount: </label>
+         <select name="measurement" onChange={handleMeasurement}>
+         <option>Measurements</option>
+         {measurementOptions}
+     </select>
+     </div>
 
 
+     <div> 
+     <label>Select equipments: </label>
+         <select name="equipment" onChange={handleEquipment}>
+         <option> Equipments</option>
+         {equipmentsOptions}
+     </select>
+     </div>
+     <label>Description: </label>
+     <div>
+         
+         <input className="description"
+             type="text"
+             name="description"
+             // onChange={handleChange}
+             // value={stateRecipe.image}
+         />
+     </div>
 
-            {/*
-            <select
-                name="cuisine"
-                onChange={handleCuisine}>
-                <option>Select a cuisine</option>
-                {cuisineOptions}
-            </select> */}
-            <button className="button" id="add" type="submit">ADD RECIPE</button>
-        </form>
-        </div>
+     <div>
+         </div>
+
+
+
+     {/*
+     <select
+         name="cuisine"
+         onChange={handleCuisine}>
+         <option>Select a cuisine</option>
+         {cuisineOptions}
+     </select> */}
+     <button className="button" id="add" type="submit">ADD RECIPE</button>
+ </form>
+ </div>
+ </>
     )
 }
 export default NewRecipeForm;

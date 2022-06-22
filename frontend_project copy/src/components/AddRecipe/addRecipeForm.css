@@ -1,4 +1,19 @@
+.addRecipeHeading{
+    font-family:'Courier New', Courier, monospace;
+    padding-left: 5%;
+    font-weight: 10px;
+    font-size: 2rem;
+
+}
+
+.addRecipe-p{
+    padding-left: 7%;
+    margin-bottom: 1rem;
+
+}
+
 .form-container{
+    padding: 1rem 2rem;
     display: flex;
     margin: 0;
     

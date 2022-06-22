@@ -19,7 +19,7 @@ const FooterBar = () => {
                     <div className="footer-col">
                         
                         <ul>
-                        <h4><b>Guide bit</b><Icon icon="la:cookie-bite"></Icon></h4>
+                        <h4><b>Guide bite</b><Icon icon="la:cookie-bite"></Icon></h4>
                             <li><a href=""></a>About us</li>
                             <li><a href=""></a>Our services</li>
                             <li><a href=""></a>Terms of Use</li>
@@ -42,6 +42,7 @@ const FooterBar = () => {
 
                     </ div>
                     <div className="footer-col">
+                        
                     <ul>
                         <h4>Get Help</h4>
                         
@@ -53,21 +54,35 @@ const FooterBar = () => {
                         </ul>
 
                     </ div>
+                    <div className="footer-links-container">
+                        <div className="foot-link-header">
+                        <h4>Follow us</h4>
+                        </div>
+
+                        <div className="footer-links-container2">
                     <div className="footer-col">
                     <ul>
-                        <h4>Follow us</h4>
                         
-
-                        <li><a href="https://tasty.co/"><Icon icon="logos:blogger"width="20" height="20" /> Blog</a></li>
-                        <li><a href="https://en-gb.facebook.com/MyIncredibleRecipes/"><Icon icon="logos:facebook"width="20" height="20" /> Facebook </a></li>
-                        <li><a href="https://twitter.com/simplyrecipes?lang=en-GB"><Icon icon="openmoji:twitter" width="20" height="20"/>Twitter</a></li>
-                        <li><a href="https://www.linkedin.com/in/foodblogs/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk"><Icon icon="logos:linkedin-icon" width="20" height="20" />Linkedin</a></li>
+                        
+                       <li><a href="https://www.linkedin.com/in/foodblogs/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=uk"><Icon icon="logos:linkedin-icon" width="20" height="20" />Linkedin</a></li>
                         <li><a href="https://www.instagram.com/love_food/?hl=en"><Icon icon="logos:instagram-icon" width="20" height="20" /> Instagram</a></li>
                         <li><a href="https://www.youtube.com/watch?v=-bo3kr303uk"><Icon icon="logos:youtube-icon" width="20" height="20" /> Youtube</a></li>
                         
                         </ul>
 
                     </ div>
+                    <div className="footer-col">
+                    <ul>
+                        
+
+                        <li><a href="https://tasty.co/"><Icon icon="logos:blogger"width="20" height="20" /> Blog</a></li>
+                        <li><a href="https://en-gb.facebook.com/MyIncredibleRecipes/"><Icon icon="logos:facebook"width="20" height="20" /> Facebook </a></li>
+                        <li><a href="https://twitter.com/simplyrecipes?lang=en-GB"><Icon icon="openmoji:twitter" width="20" height="20"/>Twitter</a></li>
+                           </ul>
+
+                    </ div>
+                    </div>
+                    </div>
                  </div>
 
             </div>
