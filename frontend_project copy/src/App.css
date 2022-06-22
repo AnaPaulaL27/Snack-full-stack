@@ -70,15 +70,15 @@ body {
 
 .footer{
   background-color:#e8dede;
-  padding: 12px 0;
+  width: 100%;
 
 
 }
 
 .container{
-  max-width: 2000px;
-  max-height: 270px;
-  background-color:rgb(191, 174, 174);
+  width:100%;
+  max-height: 300px;
+  background-color:#e0dfdc;
   padding-left:10em;
   text-align: center;
   display: flex;

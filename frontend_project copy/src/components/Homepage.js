@@ -26,14 +26,14 @@ const Homepage = () => {
             <SlideShow1/>
 
         </div>
-        <div>
+        {/* <div>
         <RandomFacts />
-        </div>
-        <div>
+        </div> */}
+        <div><br/><br/>
         <RatingsReviews />
         </div>
         <div>
-            <ReviewSection addComment = {addComment}/>
+            {/* <ReviewSection addComment = {addComment}/> */}
             <FooterBar />
         </div>
       

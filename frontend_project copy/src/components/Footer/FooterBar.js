@@ -72,10 +72,10 @@ const FooterBar = () => {
 
             </div>
             <div>
-                 <p>Site design / logo © 2022 BNTA Inc; user contributions licensed under cc by-sa. rev 2022.6.20.357.
+                 {/* <p>Site design / logo © 2022 BNTA Inc; user contributions licensed under cc by-sa. rev 2022.6.20.357.
                  Agree to this application's use of cookies and similar technologies to enhance your browsing experience, security, analytics, customization and personalized advertising.
                  Text is available under the Creative BNTA Attribution-ShareAlike License 2.0; additional terms may apply.</p>
-                <p>By using this site, you agree to the Terms of Use and Privacy Policy. GuiteBites® is a registered trademark of the BNTA Foundation, Inc., a non-profit organization.</p>
+                <p>By using this site, you agree to the Terms of Use and Privacy Policy. GuiteBites® is a registered trademark of the BNTA Foundation, Inc., a non-profit organization.</p> */}
             </div>
              <div>
              <center>
