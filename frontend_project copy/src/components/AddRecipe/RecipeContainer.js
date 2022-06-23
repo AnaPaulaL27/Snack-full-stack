@@ -70,8 +70,7 @@ const RecipeContainer = () => {
 
   return (
     <>
-      <h1>Delicious Recipes </h1>
-      <p> a resource for food-lovers! </p>
+  
       {ingredients ? <NewRecipeForm postRecipe={postRecipe} 
                                     ingredients = {ingredients} 
                                     equipments = {equipments} 

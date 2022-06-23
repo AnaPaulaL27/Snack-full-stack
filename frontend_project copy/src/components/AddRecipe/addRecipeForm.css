@@ -1,12 +1,13 @@
 .addRecipeHeading{
     font-family:'Courier New', Courier, monospace;
     padding-left: 5%;
-    font-weight: 10px;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 2.2rem;
 
 }
 
 .addRecipe-p{
+    font-family:'Courier New', Courier, monospace;
     padding-left: 7%;
     margin-bottom: 1rem;
 

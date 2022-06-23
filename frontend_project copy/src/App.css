@@ -107,10 +107,9 @@ ul{
 
 
 .footer{
-border: 1px solid black;
+  width:100%;
   position: relative;
-  width:100%
-
+  bottom: 1;
 }
 
 .footer-col{
@@ -377,6 +376,7 @@ width:90%;
 .button:hover{
   background-color: #3b873e; /* Green */
   cursor: pointer;
+  box-shadow: 2px 3px #19461b;
 
 }
 
