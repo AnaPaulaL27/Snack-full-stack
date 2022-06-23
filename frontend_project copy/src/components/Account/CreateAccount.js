@@ -6,6 +6,9 @@ import { Link } from "react-router-dom";
 import Button from "@mui/material/Button";
 
 const CreateAccount = () => {
+  const handleCreateAccountClick = (event) => {
+    alert("Thank you! \n \nThanks for signing up. Welcome to our community. We are happy to have you on board.");
+  };
   return (
       <div className="parent">
     <div className="signup">
@@ -93,6 +96,7 @@ const CreateAccount = () => {
         </p> <br /> <br />
         <Link to='/homepage' style={{ textDecoration: 'none' }}>
       <Button
+       onClick={handleCreateAccountClick}
         style={{
           borderRadius: 5,
           backgroundColor: "#8bb854",
