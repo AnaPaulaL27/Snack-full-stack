@@ -26,13 +26,13 @@
 .parentCard {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, max-content));
-  grid-gap: 100px;
+  grid-gap: 90px;
   justify-content: space-around;
   padding: initial;
   margin-top: 10px;
   padding-top: 50px; 
   margin-left: 50px;
-  margin-right: 50px;
+  margin-right: 80px;
   /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
