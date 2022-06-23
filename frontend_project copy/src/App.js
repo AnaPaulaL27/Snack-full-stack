@@ -13,7 +13,16 @@ import RecipeRealList from "./components/FindRecipe/RecipeRenderedList";
 import Account from "./components/Account/Account"
 import CreateAccount from "./components/Account/CreateAccount";
 import FooterBar from "./components/Footer/FooterBar";
+import React, { useState } from "react";
+import styles from "./components/Account/App.module.css";
+
+
 function App() {
+  
+  const [isOpen, setIsOpen] = useState(false);
+
+
+
   
   return (
     <Layout>

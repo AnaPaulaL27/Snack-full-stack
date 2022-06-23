@@ -3,10 +3,19 @@ import VisibilityOffIcon from "@mui/icons-material/VisibilityOff";
 import Button from "@mui/material/Button";
 import { Link } from "react-router-dom";
 import "./account.css";
+import ForgottenPassword from "./ForgottenPassword";
+import "./signin.css";
 
 const Account = () => {
+
+  const handleLoginClick = (event) => {
+  
+    alert("Logging in...please wait...");
+  }
+
   return (
-    <div className="signin">
+    
+    <div className="signin" >
       <form>
         <TextField
           label="Email address"
@@ -29,7 +38,8 @@ const Account = () => {
         <br />
       </form>
       <br />
-      <Button
+      <Link to='/homepage' style={{ textDecoration: 'none' }}>
+      <Button onClick={handleLoginClick} 
         style={{
           borderRadius: 5,
           backgroundColor: "#74b8b2",
@@ -41,10 +51,13 @@ const Account = () => {
       >
         Log in
       </Button>
-      <br />
-      <Link to="/homepage" style={{ textDecoration: 'none' }}>
-        <h4 className="forgot">Forgotten password?</h4>
       </Link>
+      <br /><br />
+      
+        <h4 className="forgot">
+        <ForgottenPassword/>
+        </h4>
+      
       <br />
       <Link to='/account/createAccount' style={{ textDecoration: 'none' }}>
       <Button
@@ -61,6 +74,7 @@ const Account = () => {
       </Button>
       </Link>
     </div>
+    
   );
 };
 
