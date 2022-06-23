@@ -107,9 +107,9 @@ ul{
 
 
 .footer{
-  width:100%;
   position: relative;
-  bottom: 1;
+            bottom: 0;
+            width: 100%;
 }
 
 .footer-col{

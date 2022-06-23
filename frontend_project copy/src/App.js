@@ -1,6 +1,7 @@
 import "./App.css";
 import "./components/AddRecipe/addRecipeForm.css";
 import "./components/RatingsReviews/ratingsReviews.css";
+import "./components/FindRecipe/chosenRecipe.css";
 
 import { Route, Redirect, Switch } from "react-router-dom";
 import Homepage from "./components/Homepage";

@@ -12,7 +12,7 @@ const Recipe = ({ recipes2 }) => {
     if (recipes2.length) {
       let filterChecker = recipes2.filter((recipe) => {
         if (recipe.id == params.recipeId) {
-          console.log("filter found something");
+          // console.log("filter found something");
           return recipe;
         }
       });
@@ -27,9 +27,12 @@ const Recipe = ({ recipes2 }) => {
         <>
           {
             <>
+            <div className="chosenRecipe-container">
               <h1>Chosen Recipe:</h1>
               <h2>{chosenRecipe.name}</h2>
-              {/* <img src={chosenRecipe.image} /> */}
+              <br/>
+ <img className="image" src={chosenRecipe.image} />
+             
               <p>Cuisine: {chosenRecipe.cuisine}</p>
               <p>
                 <AccessTimeFilledIcon /> Prep: {chosenRecipe.prepTime} mins
@@ -37,16 +40,20 @@ const Recipe = ({ recipes2 }) => {
               <p>
                 <AccessTimeIcon /> Cook: {chosenRecipe.prepTime} mins
               </p>
-              <p> Ingredients
+              {/* <p> Ingredients
                 {chosenRecipe.measurements.map((ingredient) => {
+                  ingredient.map(eachingredient => eachingredient.name)
                   return (<> 
-                  <li key={ingredient.id}>{ingredient.name}</li></>)
+                  <li key={ingredient.id}>{eachingredient.name}</li></>)
+                  
                           
                  } )}
                
-              </p>
+              </p> */}
+              </div>
             </>
           }
+          
         </>
       ) : (
         ""
